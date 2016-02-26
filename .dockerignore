@@ -1,0 +1,12 @@
+*
+
+# Only include these files:
+!index.html
+!js/
+!lib/
+!css/
+!img/
+!docs/
+!weather.json
+!examples/
+!plugins/

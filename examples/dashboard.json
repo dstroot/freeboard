@@ -1,0 +1,163 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [
+		{
+			"title": "Clock",
+			"width": 1,
+			"row": {
+				"3": 1,
+				"4": 1
+			},
+			"col": {
+				"3": 2,
+				"4": -9
+			},
+			"col_width": "2",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Los Angeles",
+						"size": "big",
+						"value": "datasources[\"Los Angeles\"][\"time_string_value\"]",
+						"animate": true,
+						"units": ""
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 7,
+				"4": 1
+			},
+			"col": {
+				"3": 1,
+				"4": 3
+			},
+			"col_width": "2",
+			"widgets": [
+				{
+					"type": "gauge",
+					"settings": {
+						"value": "datasources[\"Email Machine\"].DBconnections",
+						"units": "Email",
+						"min_value": 0,
+						"max_value": 100
+					}
+				},
+				{
+					"type": "pointer",
+					"settings": {
+						"direction": "datasources[\"Email Machine\"][\"DBconnections\"]",
+						"value_text": "datasources[\"Email Machine\"][\"Program\"]",
+						"units": "Email"
+					}
+				}
+			]
+		},
+		{
+			"title": "Test",
+			"width": 1,
+			"row": {
+				"3": 23
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": "2",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "DB Connections",
+						"size": "big",
+						"value": [
+							"datasources[\"Email Machine\"][\"DBconnections\"]"
+						],
+						"sparkline": true,
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 1
+			},
+			"col": {
+				"3": 1
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Emails",
+						"size": "big",
+						"value": "datasources[\"Email Machine\"][\"Emails\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Emails"
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"3": 7
+			},
+			"col": {
+				"3": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Errors",
+						"size": "big",
+						"value": "datasources[\"Email Machine\"][\"Errors\"]",
+						"sparkline": true,
+						"animate": true
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "Los Angeles",
+			"type": "clock",
+			"settings": {
+				"refresh": 1
+			}
+		},
+		{
+			"name": "Email Machine",
+			"type": "JSON",
+			"settings": {
+				"url": "http://localhost:3000/fetch/http://localhost:8001/",
+				"use_thingproxy": false,
+				"refresh": 5,
+				"method": "GET",
+				"headers": [
+					{
+						"name": "Accept",
+						"value": "application/json"
+					},
+					{
+						"name": "Content-Type",
+						"value": "application/json"
+					}
+				]
+			}
+		}
+	],
+	"columns": 3
+}
