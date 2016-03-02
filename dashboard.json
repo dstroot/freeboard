@@ -1,0 +1,321 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [
+		{
+			"title": "Collection Machine",
+			"width": 1,
+			"row": {
+				"3": 1,
+				"4": 9
+			},
+			"col": {
+				"3": 1,
+				"4": 3
+			},
+			"col_width": "2",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Up Time",
+						"size": "regular",
+						"value": "datasources[\"Collection Machine\"][\"RunTime\"]",
+						"sparkline": false,
+						"animate": true,
+						"units": ""
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "",
+						"size": "big",
+						"value": "datasources[\"Collection Machine\"][\"Activities\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Activities"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine\"][\"EmailsSent\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Emails"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine\"][\"PaymentsCreated\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Payments"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine\"][\"DirectMailCreated\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Direct Mails"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine\"][\"SMSSent\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "SMS"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine\"][\"DBconnections\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Connections"
+					}
+				}
+			]
+		},
+		{
+			"title": "Los Angeles",
+			"width": 1,
+			"row": {
+				"4": 1
+			},
+			"col": {
+				"4": 1
+			},
+			"col_width": "2",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "regular",
+						"value": "datasources[\"Los Angeles\"][\"time_string_value\"]",
+						"animate": true
+					}
+				}
+			]
+		},
+		{
+			"title": "Monitors",
+			"width": 1,
+			"row": {
+				"4": 1,
+				"5": 1
+			},
+			"col": {
+				"4": 3,
+				"5": 3
+			},
+			"col_width": "2",
+			"widgets": [
+				{
+					"type": "indicator",
+					"settings": {
+						"title": "",
+						"value": "datasources[\"Email Machine\"][\"DBconnections\"]",
+						"on_text": "Email Machine",
+						"off_text": "Email Machine"
+					}
+				},
+				{
+					"type": "indicator",
+					"settings": {
+						"title": "",
+						"value": "datasources[\"Collection Machine\"][\"DBconnections\"]",
+						"on_text": "Collection Machine",
+						"off_text": "Collection Machine"
+					}
+				},
+				{
+					"type": "indicator",
+					"settings": {
+						"value": "datasources[\"TTP Loader\"][\"DBconnections\"]",
+						"on_text": "TTP Loader",
+						"off_text": "TTP Loader"
+					}
+				}
+			]
+		},
+		{
+			"title": "Email Machine",
+			"width": 1,
+			"row": {
+				"3": 37,
+				"4": 5,
+				"5": 23,
+				"6": 23
+			},
+			"col": {
+				"3": 2,
+				"4": 1,
+				"5": 1,
+				"6": 1
+			},
+			"col_width": "2",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Up Time",
+						"size": "regular",
+						"value": "datasources[\"Email Machine\"][\"RunTime\"]",
+						"animate": true,
+						"units": "Up Time"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Email Machine\"][\"Emails\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Emails"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Email Machine\"][\"Errors\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Errors"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "",
+						"size": "big",
+						"value": [
+							"datasources[\"Email Machine\"][\"DBconnections\"]"
+						],
+						"sparkline": true,
+						"animate": true,
+						"units": "Connections"
+					}
+				}
+			]
+		},
+		{
+			"title": "TTP Loader",
+			"width": 1,
+			"row": {
+				"4": 21
+			},
+			"col": {
+				"4": 1
+			},
+			"col_width": "2",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Up Time",
+						"size": "regular",
+						"value": "datasources[\"TTP Loader\"][\"RunTime\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "regular",
+						"value": "datasources[\"TTP Loader\"][\"Files\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Files"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "regular",
+						"value": "datasources[\"TTP Loader\"][\"Records\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Records"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"TTP Loader\"][\"DBconnections\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Connections"
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "Los Angeles",
+			"type": "clock",
+			"settings": {
+				"refresh": 1
+			}
+		},
+		{
+			"name": "Email Machine",
+			"type": "JSON",
+			"settings": {
+				"url": "http://10.1.120.143:3000/fetch/http://10.1.120.143:3002",
+				"use_thingproxy": false,
+				"refresh": 5,
+				"method": "GET",
+				"headers": [
+					{
+						"name": "Accept",
+						"value": "application/json"
+					},
+					{
+						"name": "Content-Type",
+						"value": "application/json"
+					}
+				]
+			}
+		},
+		{
+			"name": "Collection Machine",
+			"type": "JSON",
+			"settings": {
+				"url": "http://10.1.120.143:3000/fetch/http://10.1.120.143:3001/",
+				"use_thingproxy": false,
+				"refresh": 5,
+				"method": "GET",
+				"name": "Collection Machine"
+			}
+		},
+		{
+			"name": "TTP Loader",
+			"type": "JSON",
+			"settings": {
+				"url": "http://10.1.120.143:3000/fetch/http://10.1.120.143:3006/",
+				"use_thingproxy": false,
+				"refresh": 5,
+				"method": "GET"
+			}
+		}
+	],
+	"columns": 4
+}
