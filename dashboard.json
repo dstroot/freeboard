@@ -4,100 +4,13 @@
 	"plugins": [],
 	"panes": [
 		{
-			"title": "Collection Machine",
-			"width": 1,
-			"row": {
-				"3": 1,
-				"4": 9
-			},
-			"col": {
-				"3": 1,
-				"4": 3
-			},
-			"col_width": "2",
-			"widgets": [
-				{
-					"type": "text_widget",
-					"settings": {
-						"title": "Up Time",
-						"size": "regular",
-						"value": "datasources[\"Collection Machine\"][\"RunTime\"]",
-						"sparkline": false,
-						"animate": true,
-						"units": ""
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"title": "",
-						"size": "big",
-						"value": "datasources[\"Collection Machine\"][\"Activities\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Activities"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"size": "big",
-						"value": "datasources[\"Collection Machine\"][\"EmailsSent\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Emails"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"size": "big",
-						"value": "datasources[\"Collection Machine\"][\"PaymentsCreated\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Payments"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"size": "big",
-						"value": "datasources[\"Collection Machine\"][\"DirectMailCreated\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Direct Mails"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"size": "big",
-						"value": "datasources[\"Collection Machine\"][\"SMSSent\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "SMS"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"size": "big",
-						"value": "datasources[\"Collection Machine\"][\"DBconnections\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Connections"
-					}
-				}
-			]
-		},
-		{
 			"title": "Los Angeles",
 			"width": 1,
 			"row": {
 				"4": 1
 			},
 			"col": {
-				"4": 1
+				"4": 3
 			},
 			"col_width": "2",
 			"widgets": [
@@ -115,7 +28,7 @@
 			"title": "Monitors",
 			"width": 1,
 			"row": {
-				"4": 1,
+				"4": 5,
 				"5": 1
 			},
 			"col": {
@@ -128,26 +41,181 @@
 					"type": "indicator",
 					"settings": {
 						"title": "",
-						"value": "datasources[\"Email Machine\"][\"DBconnections\"]",
-						"on_text": "Email Machine",
-						"off_text": "Email Machine"
+						"value": "datasources[\"Collection Machine 10\"][\"DBconnections\"]",
+						"on_text": "Collection Machine 10",
+						"off_text": "Collection Machine 10"
 					}
 				},
 				{
 					"type": "indicator",
 					"settings": {
 						"title": "",
-						"value": "datasources[\"Collection Machine\"][\"DBconnections\"]",
-						"on_text": "Collection Machine",
-						"off_text": "Collection Machine"
+						"value": "datasources[\"Collection Machine 20\"][\"DBconnections\"]",
+						"on_text": "Collection Machine 20",
+						"off_text": "Collection Machine 20"
 					}
 				},
 				{
 					"type": "indicator",
 					"settings": {
-						"value": "datasources[\"TTP Loader\"][\"DBconnections\"]",
-						"on_text": "TTP Loader",
-						"off_text": "TTP Loader"
+						"value": "datasources[\"Email Machine\"][\"DBconnections\"]",
+						"on_text": "Email Machine",
+						"off_text": "Email Machine"
+					}
+				}
+			]
+		},
+		{
+			"title": "Collection Machine 20",
+			"width": 1,
+			"row": {
+				"4": 13,
+				"6": 5
+			},
+			"col": {
+				"4": 3,
+				"6": 3
+			},
+			"col_width": "2",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Up Time",
+						"size": "regular",
+						"value": "datasources[\"Collection Machine 20\"][\"RunTime\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "",
+						"size": "big",
+						"value": "datasources[\"Collection Machine 20\"][\"Activities\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Activities"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "",
+						"size": "big",
+						"value": "datasources[\"Collection Machine 20\"][\"EmailsSent\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Emails"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine 20\"][\"PaymentsCreated\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Payments"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine 20\"][\"DirectMailCreated\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Direct Mails"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine 20\"][\"DBconnections\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "DB Connections"
+					}
+				}
+			]
+		},
+		{
+			"title": "Collection Machine 10",
+			"width": 1,
+			"row": {
+				"3": 1,
+				"4": 13,
+				"7": 7
+			},
+			"col": {
+				"3": 1,
+				"4": 1,
+				"7": 1
+			},
+			"col_width": "2",
+			"widgets": [
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Up Time",
+						"size": "regular",
+						"value": "datasources[\"Collection Machine 10\"][\"RunTime\"]",
+						"sparkline": false,
+						"animate": true,
+						"units": ""
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "",
+						"size": "big",
+						"value": "datasources[\"Collection Machine 10\"][\"Activities\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Activities"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine 10\"][\"EmailsSent\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Emails"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine 10\"][\"PaymentsCreated\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Payments"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine 10\"][\"DirectMailCreated\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "Direct Mails"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"size": "big",
+						"value": "datasources[\"Collection Machine 10\"][\"DBconnections\"]",
+						"sparkline": true,
+						"animate": true,
+						"units": "DB Connections"
 					}
 				}
 			]
@@ -156,23 +224,16 @@
 			"title": "Email Machine",
 			"width": 1,
 			"row": {
-				"3": 37,
-				"4": 5,
-				"5": 23,
-				"6": 23
+				"4": 1
 			},
 			"col": {
-				"3": 2,
-				"4": 1,
-				"5": 1,
-				"6": 1
+				"4": 1
 			},
 			"col_width": "2",
 			"widgets": [
 				{
 					"type": "text_widget",
 					"settings": {
-						"title": "Up Time",
 						"size": "regular",
 						"value": "datasources[\"Email Machine\"][\"RunTime\"]",
 						"animate": true,
@@ -193,75 +254,10 @@
 					"type": "text_widget",
 					"settings": {
 						"size": "big",
-						"value": "datasources[\"Email Machine\"][\"Errors\"]",
+						"value": "datasources[\"Email Machine\"][\"DBconnections\"]",
 						"sparkline": true,
 						"animate": true,
-						"units": "Errors"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"title": "",
-						"size": "big",
-						"value": [
-							"datasources[\"Email Machine\"][\"DBconnections\"]"
-						],
-						"sparkline": true,
-						"animate": true,
-						"units": "Connections"
-					}
-				}
-			]
-		},
-		{
-			"title": "TTP Loader",
-			"width": 1,
-			"row": {
-				"4": 21
-			},
-			"col": {
-				"4": 1
-			},
-			"col_width": "2",
-			"widgets": [
-				{
-					"type": "text_widget",
-					"settings": {
-						"title": "Up Time",
-						"size": "regular",
-						"value": "datasources[\"TTP Loader\"][\"RunTime\"]",
-						"animate": true
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"size": "regular",
-						"value": "datasources[\"TTP Loader\"][\"Files\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Files"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"size": "regular",
-						"value": "datasources[\"TTP Loader\"][\"Records\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Records"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"size": "big",
-						"value": "datasources[\"TTP Loader\"][\"DBconnections\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Connections"
+						"units": "DB Connections"
 					}
 				}
 			]
@@ -276,7 +272,7 @@
 			}
 		},
 		{
-			"name": "Email Machine",
+			"name": "Collection Machine 20",
 			"type": "JSON",
 			"settings": {
 				"url": "http://10.1.120.143:3000/fetch/http://10.1.120.143:3002",
@@ -296,21 +292,21 @@
 			}
 		},
 		{
-			"name": "Collection Machine",
+			"name": "Collection Machine 10",
 			"type": "JSON",
 			"settings": {
 				"url": "http://10.1.120.143:3000/fetch/http://10.1.120.143:3001/",
 				"use_thingproxy": false,
 				"refresh": 5,
 				"method": "GET",
-				"name": "Collection Machine"
+				"name": "Collection Machine 10"
 			}
 		},
 		{
-			"name": "TTP Loader",
+			"name": "Email Machine",
 			"type": "JSON",
 			"settings": {
-				"url": "http://10.1.120.143:3000/fetch/http://10.1.120.143:3006/",
+				"url": "http://10.1.120.143:3000/fetch/http://10.1.120.143:3003/",
 				"use_thingproxy": false,
 				"refresh": 5,
 				"method": "GET"
