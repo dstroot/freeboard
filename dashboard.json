@@ -7,10 +7,12 @@
 			"title": "Los Angeles",
 			"width": 1,
 			"row": {
+				"3": 1,
 				"4": 1
 			},
 			"col": {
-				"4": 3
+				"3": 3,
+				"4": 1
 			},
 			"col_width": "2",
 			"widgets": [
@@ -25,133 +27,18 @@
 			]
 		},
 		{
-			"title": "Monitors",
-			"width": 1,
-			"row": {
-				"4": 5,
-				"5": 1
-			},
-			"col": {
-				"4": 3,
-				"5": 3
-			},
-			"col_width": "2",
-			"widgets": [
-				{
-					"type": "indicator",
-					"settings": {
-						"title": "",
-						"value": "datasources[\"Collection Machine 10\"][\"DBconnections\"]",
-						"on_text": "Collection Machine 10",
-						"off_text": "Collection Machine 10"
-					}
-				},
-				{
-					"type": "indicator",
-					"settings": {
-						"title": "",
-						"value": "datasources[\"Collection Machine 20\"][\"DBconnections\"]",
-						"on_text": "Collection Machine 20",
-						"off_text": "Collection Machine 20"
-					}
-				},
-				{
-					"type": "indicator",
-					"settings": {
-						"value": "datasources[\"Email Machine\"][\"DBconnections\"]",
-						"on_text": "Email Machine",
-						"off_text": "Email Machine"
-					}
-				}
-			]
-		},
-		{
-			"title": "Collection Machine 20",
-			"width": 1,
-			"row": {
-				"4": 13,
-				"6": 5
-			},
-			"col": {
-				"4": 3,
-				"6": 3
-			},
-			"col_width": "2",
-			"widgets": [
-				{
-					"type": "text_widget",
-					"settings": {
-						"title": "Up Time",
-						"size": "regular",
-						"value": "datasources[\"Collection Machine 20\"][\"RunTime\"]",
-						"animate": true
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"title": "",
-						"size": "big",
-						"value": "datasources[\"Collection Machine 20\"][\"Activities\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Activities"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"title": "",
-						"size": "big",
-						"value": "datasources[\"Collection Machine 20\"][\"EmailsSent\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Emails"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"size": "big",
-						"value": "datasources[\"Collection Machine 20\"][\"PaymentsCreated\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Payments"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"size": "big",
-						"value": "datasources[\"Collection Machine 20\"][\"DirectMailCreated\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "Direct Mails"
-					}
-				},
-				{
-					"type": "text_widget",
-					"settings": {
-						"size": "big",
-						"value": "datasources[\"Collection Machine 20\"][\"DBconnections\"]",
-						"sparkline": true,
-						"animate": true,
-						"units": "DB Connections"
-					}
-				}
-			]
-		},
-		{
-			"title": "Collection Machine 10",
+			"title": "Collection Machine",
 			"width": 1,
 			"row": {
 				"3": 1,
-				"4": 13,
+				"4": 1,
+				"5": 7,
 				"7": 7
 			},
 			"col": {
 				"3": 1,
-				"4": 1,
+				"4": 3,
+				"5": 1,
 				"7": 1
 			},
 			"col_width": "2",
@@ -221,13 +108,51 @@
 			]
 		},
 		{
+			"title": "Monitors",
+			"width": 1,
+			"row": {
+				"4": 5,
+				"5": 1,
+				"6": 1
+			},
+			"col": {
+				"4": 1,
+				"5": 3,
+				"6": 3
+			},
+			"col_width": "2",
+			"widgets": [
+				{
+					"type": "indicator",
+					"settings": {
+						"title": "",
+						"value": "datasources[\"Collection Machine 10\"][\"DBconnections\"]",
+						"on_text": "Collection Machine",
+						"off_text": "Collection Machine"
+					}
+				},
+				{
+					"type": "indicator",
+					"settings": {
+						"value": "datasources[\"Email Machine\"][\"DBconnections\"]",
+						"on_text": "Email Machine",
+						"off_text": "Email Machine"
+					}
+				}
+			]
+		},
+		{
 			"title": "Email Machine",
 			"width": 1,
 			"row": {
-				"4": 1
+				"4": 11,
+				"6": 1,
+				"7": 1
 			},
 			"col": {
-				"4": 1
+				"4": 1,
+				"6": 1,
+				"7": 1
 			},
 			"col_width": "2",
 			"widgets": [
