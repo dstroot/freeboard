@@ -2,8 +2,8 @@
 # Variables
 #
 
-DOCKER_NAME=dstroot/tpg-ttpweb
-VERSION=1.0.21
+DOCKER_NAME=dstroot/freeboard
+VERSION=1.0.0
 SHELL=/bin/bash
 
 #
