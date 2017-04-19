@@ -3,7 +3,7 @@
 #
 
 DOCKER_NAME=dstroot/freeboard
-VERSION=1.0.0
+VERSION=1.0.1
 SHELL=/bin/bash
 
 #
